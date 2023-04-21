@@ -21,6 +21,7 @@ More Info
 Data Structure and Functions
 ----------------------------
 For this project you are given the following print_array, and print_list functions:
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -44,6 +45,7 @@ void print_array(const int *array, size_t size)
     }
     printf("\n");
 }
+
 #include <stdio.h>
 #include "sort.h"
 
@@ -101,5 +103,5 @@ Here is a quick tip to help you test your sorting algorithms with big sets of ra
 
 Collaborators
 -------------
-Francis Ng'ang'a: wanyoike39@gmail.com
+Francis Ng'ang'a: wanyoike39@gmail.com  
 Cliff Omanyo: cliffomanyo@gmail.com
