@@ -74,6 +74,7 @@ void print_list(const listint_t *list)
 * Our files print_array.c and print_list.c (containing the print_array and print_list functions) will be compiled with your functions during the correction.  
 * Please declare the prototype of the functions print_array and print_list in your sort.h header file  
 Please use the following data structure for doubly linked list:  
+
 /**  
  \* struct listint_s - Doubly linked list node  
  \*  
@@ -87,6 +88,7 @@ typedef struct listint_s
     struct listint_s *prev;  
     struct listint_s *next;  
 } listint_t;  
+
 Please, note this format is used for Quiz and Task questions.  
 
 * O(1)  
