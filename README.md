@@ -24,10 +24,10 @@ Data Structure and Functions
 ----------------------------
 * For this project you are given the following print_array, and print_list functions:  
 
+```
 #include <stdlib.h>  
 #include <stdio.h>  
 
-```
 /**  
  \* print_array - Prints an array of integers  
  \*  
