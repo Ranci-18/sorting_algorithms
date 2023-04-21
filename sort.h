@@ -3,11 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-<<<<<<< HEAD
-=======
 #include <stdio.h>
 #include <stdbool.h>
->>>>>>> 0afe81851dbd617945605bc7f7a81466c56fdfbe
 
 /**
  * struct listint_s - Doubly linked list node
