@@ -15,7 +15,6 @@ void counting_sort(int *array, size_t size)
 	count_arr = (int *)malloc(sizeof(int) * (k + 1));
 	if (!count_arr)
 	{
-		free(count_arr);
 		return;
 	}
 	init_count_inst(array, count_arr, size, k);
@@ -26,7 +25,7 @@ void counting_sort(int *array, size_t size)
 	output_arr = (int *)malloc(sizeof(int) * size);
 	if (!output_arr)
 	{
-		free(output_arr);
+		free(count_arr);
 		return;
 	}
 	fill_output_arr(array, output_arr, count_arr, size);
