@@ -15,8 +15,8 @@ void counting_sort(int *array, size_t size)
 	count_arr = (int *)malloc(sizeof(int) * (k + 1));
 	if (!count_arr)
 	{
-		fprintf(stderr, "failure\n");
-		exit(EXIT_FAILURE);
+		free(count_arr);
+		return;
 	}
 	init_count_inst(array, count_arr, size, k);
 	sum_ints(count_arr, k);
@@ -26,8 +26,8 @@ void counting_sort(int *array, size_t size)
 	output_arr = (int *)malloc(sizeof(int) * size);
 	if (!output_arr)
 	{
-		fprintf(stderr, "failure\n");
-		exit(EXIT_FAILURE);
+		free(output_arr);
+		return;
 	}
 	fill_output_arr(array, output_arr, count_arr, size);
 
