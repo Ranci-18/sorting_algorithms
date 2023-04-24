@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio.h>
+#include <unistd.h>
 #include <stdbool.h>
 
 /**
@@ -30,5 +30,10 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 int lomut_partition(int *array, int strt, int nd, int size);
 void quick_sort2(int *array, int start, int end, int size);
+void counting_sort(int *array, size_t size);
+int largest_int(int *array, size_t size);
+void init_count_inst(int *array, int *count_arr, size_t size, int k);
+void sum_ints(int *count_arr, int k);
+void fill_output_arr(int *array, int *output_arr, int *count_arr, size_t size);
 
 #endif
