@@ -19,8 +19,8 @@ void counting_sort(int *array, size_t size)
 		exit(EXIT_FAILURE);
 	}
 	init_count_inst(array, count_arr, size, k);
-	print_array(count_arr, k + 1);
 	sum_ints(count_arr, k);
+	print_array(count_arr, k + 1);
 
 	/*create mem space for output array as size of input array*/
 	output_arr = (int *)malloc(sizeof(int) * size);
