@@ -29,5 +29,7 @@ void quick_sort(int *array, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void shell_sort(int *array, size_t size);
+int lomut_partition(int *array, int strt, int nd, int size);
+void quick_sort2(int *array, int start, int end, int size);
 
 #endif
