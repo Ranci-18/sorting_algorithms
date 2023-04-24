@@ -31,12 +31,9 @@ void shell_sort(int *array, size_t size)
 			{
 				if (array[k + gap] > array[k])
 					break;
-				else
-				{
-					temp = array[k + gap];
-					array[k + gap] = array[k];
-					array[k] = temp;
-				}
+				temp = array[k + gap];
+				array[k + gap] = array[k];
+				array[k] = temp;
 			}
 		}
 		print_array(array, size);
