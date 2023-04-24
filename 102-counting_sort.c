@@ -11,10 +11,14 @@ void counting_sort(int *array, size_t size)
 	int *count_arr, *output_arr, k;
 	size_t j;
 
+	if (size < 2)
+		return;
+
 	k = largest_int(array, size);
 	count_arr = (int *)malloc(sizeof(int) * (k + 1));
 	if (!count_arr)
 	{
+		free(count_arr);
 		return;
 	}
 	init_count_inst(array, count_arr, size, k);
@@ -25,7 +29,7 @@ void counting_sort(int *array, size_t size)
 	output_arr = (int *)malloc(sizeof(int) * size);
 	if (!output_arr)
 	{
-		free(count_arr);
+		free(output_arr);
 		return;
 	}
 	fill_output_arr(array, output_arr, count_arr, size);
