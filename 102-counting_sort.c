@@ -67,6 +67,7 @@ int largest_int(int *array, size_t size)
 /**
  *init_count_inst - initializes and counts instances
  *@array: array
+ *@count_arr: counting array
  *@size: size
  *@k: largest int
  *Return: no return
@@ -92,7 +93,6 @@ void init_count_inst(int *array, int *count_arr, size_t size, int k)
 /**
  *sum_ints - adds two corresponding ints in counting array
  *@count_arr: couting array
- *@array: input array
  *@k: largest int
  *
  *Return: no return
